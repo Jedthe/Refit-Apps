@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include layout="@layout/action_bar"
+        android:id="@+id/actionbar"/>
+
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/custom_searchbar"
+            android:drawableRight="@drawable/baseline_search_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Search"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:textSize="15dp"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-70dp"
+            android:layout_marginLeft="14dp"
+            app:cardBackgroundColor="#2E7A94"
+            app:cardCornerRadius="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How do I gain more muscles?"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="50dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:background="@drawable/baseline_person_24"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="11dp"
+                android:text="Posted by Samsudin Udin"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I haven’t really gaining any muscle mass even though i have been doubling my workout time. can anybody give me any suggestion on what to do."
+                android:textColor="@color/white"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="30px"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="382dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="50dp"
+            app:cardBackgroundColor="#2E7A94"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp"
+                android:text="Is egg a good protein source?"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/baseline_person_24"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:id="@+id/posted"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="11dp"
+                android:text="Posted by      Dimitri Susanto"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/para2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="25dp"
+                android:text="I was wondering is egg a good alternative for protein cause taking the protein shake is boring for me, need to spice it up a bit."
+                android:textColor="@color/white"
+                android:textSize="30px" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="382dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="170dp"
+            app:cardBackgroundColor="#2E7A94"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp"
+                android:text="Is maintaining Muscle Hard ?"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView433"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/baseline_person_24"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:id="@+id/posted1"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="11dp"
+                android:text="Posted by       Jason Derulo"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/para3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="25dp"
+                android:text="My plan is to get buff or try to get bigger, now i wonder after getting big do i still need to train hard or i can take a break or two from the gym ?"
+                android:textColor="@color/white"
+                android:textSize="30px" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/adore"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="540dp"
+            android:background="@drawable/round_button"
+            android:padding="10dp"
+            android:src="@drawable/baseline_add_24" />
+
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="36dp"
+        app:itemIconTint="@drawable/item_selector"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
